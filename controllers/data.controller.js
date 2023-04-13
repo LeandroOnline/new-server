@@ -58,7 +58,7 @@ data.register = async (req, res) => {
       password: req.body.password,
     });
     const registered = await register.save();
-    res.status(200).redirect("/login").send('OK');
+    res.status(200).redirect("https://news-henna-six.vercel.app/login").send('OK');
   } catch (err) {
     console.log(err);
     res.status(400);
